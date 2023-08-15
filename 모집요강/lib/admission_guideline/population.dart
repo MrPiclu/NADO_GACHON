@@ -5,14 +5,14 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 
-class Population1 extends StatefulWidget {
-  const Population1({Key? key}) : super(key: key);
+class Population extends StatefulWidget {
+  const Population({Key? key}) : super(key: key);
 
   @override
-  State<Population1> createState() => _Population1State();
+  State<Population> createState() => _Population1State();
 }
 
-class _Population1State extends State<Population1> {
+class _Population1State extends State<Population> {
 
   static List<String> recruit_column = [
     "논술", "학생부우수자", "지역균형", "농어촌(교과)", "가천의약학",

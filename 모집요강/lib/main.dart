@@ -3,7 +3,8 @@
 ///
 
 import 'package:aiia/config.dart';
-import 'package:aiia/frame.dart';
+import 'package:aiia/admission_guideline/_frame.dart';
+import 'package:aiia/estimation_guideline/_frame.dart';
 
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
@@ -21,7 +22,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'nanum'),
-      title: "모집요강",
+      title: "무한길잡이",
       home: Start(),
     );
   }
@@ -41,38 +42,34 @@ class Start extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text("어떤 걸 보고 싶으신가요?",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white)),
+                  style: TextStyle(fontSize: 20, color: Colors.white)),
                 SizedBox(height: 40),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    /* 수시 */
+                    /* 모집요강 */
                     ElevatedButton(
                         onPressed: () => Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Frame(type: "수시"))),
+                            MaterialPageRoute(builder: (context) => AdmissionGuideline())),
                         style: ElevatedButton.styleFrom(
-                            foregroundColor: Colors.black,
-                            backgroundColor: Colors.white,
-                            fixedSize: Size(140, 140),
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20)),
-                            textStyle: TextStyle(fontSize: 20, fontFamily: 'text')),
-                        child: Text("수시")
+                          backgroundColor: Colors.white,
+                          fixedSize: Size(140, 140),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)),
+                          textStyle: TextStyle(fontSize: 20)),
+                        child: Text("모집요강", style: ts4)
                     ),
-                    /* 정시 */
+                    /* 전형 가이드 */
                     ElevatedButton(
                         onPressed: () => Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Frame(type: "정시"))),
+                            MaterialPageRoute(builder: (context) => EstimationGuideline())),
                         style: ElevatedButton.styleFrom(
-                            foregroundColor: Colors.black,
                             backgroundColor: Colors.white,
                             fixedSize: Size(140, 140),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20)),
-                            textStyle: TextStyle(fontSize: 20, fontFamily: 'text')),
-                        child: Text("정시")
+                            textStyle: TextStyle(fontSize: 20)),
+                        child: Text("전형가이드", style: ts4)
                     ),
                   ],
                 ),

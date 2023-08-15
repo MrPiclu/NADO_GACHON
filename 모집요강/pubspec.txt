@@ -5,7 +5,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   table_calendar: ^3.0.9
   dropdown_button2: ^2.1.0
-  fl_chart: ^0.62.0
+  circular_chart_flutter: ^0.0.2
 
 assets:
   - assets/images/marscot.png

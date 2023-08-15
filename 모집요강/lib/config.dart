@@ -21,6 +21,8 @@ TextStyle ts2 = const TextStyle(fontSize: 20, color: Colors.white, fontWeight: F
 TextStyle ts3 = const TextStyle(fontSize: 16, color: Colors.white, height: 1.6);
 TextStyle ts4 = const TextStyle(fontSize: 16, color: Colors.black87);
 TextStyle ts5 = const TextStyle(fontSize: 16, color: Colors.black87);
+TextStyle ts6 = const TextStyle(fontSize: 32, color: Colors.white, fontWeight: FontWeight.bold);
+TextStyle ts7 = const TextStyle(fontSize: 12, color: Colors.white);
 
 
 

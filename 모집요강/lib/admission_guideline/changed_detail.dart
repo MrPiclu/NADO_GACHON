@@ -5,14 +5,14 @@
 import 'package:aiia/config.dart';
 import 'package:flutter/material.dart';
 
-class ChangedDetail1 extends StatefulWidget {
-  const ChangedDetail1({Key? key}) : super(key: key);
+class ChangedDetail extends StatefulWidget {
+  const ChangedDetail({Key? key}) : super(key: key);
 
   @override
-  State<ChangedDetail1> createState() => _ChangedDetail1State();
+  State<ChangedDetail> createState() => _ChangedDetail1State();
 }
 
-class _ChangedDetail1State extends State<ChangedDetail1> {
+class _ChangedDetail1State extends State<ChangedDetail> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
