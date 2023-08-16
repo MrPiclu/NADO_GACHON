@@ -1,5 +1,11 @@
 ///
 /// 전형 가이드 틀
+/// - 전형 검색창
+/// - 평가 비율에 대한 원형 그래프
+/// - 지원 가능 학과
+/// - 전형비
+/// - 제출 서류
+/// - 세부 설명
 ///
 
 import 'package:aiia/config.dart';
@@ -19,12 +25,15 @@ class EstimationGuideline extends StatefulWidget {
 
 class _EstimationGuidelineState extends State<EstimationGuideline> {
 
+  // 전형
   Estimation est = Estimation();
 
+  // Chart
   final List<GlobalKey<AnimatedCircularChartState>> chartKeys = [
     GlobalKey<AnimatedCircularChartState>(), GlobalKey<AnimatedCircularChartState>()];
   late List<List<CircularSegmentEntry>> data;
 
+  // 검색창
   late List<String> screening = est.estimations;
   String? selectedAff;
   final TextEditingController textEditingController = TextEditingController();

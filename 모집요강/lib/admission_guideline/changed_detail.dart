@@ -1,5 +1,16 @@
 ///
-/// 변경 사항
+/// 주요 변경 사항
+/// - 학과
+///   1. 신설
+///   2. 변경
+/// - 평가 방법
+///   1. 논술
+///   2. 지역균형
+///   3. 농어촌(교과)
+/// - 전형변경
+///   1. 사회기여자전형 폐지
+///   2. 사회기여자전형 신설
+///   3. 특성화고졸재직자전형 신설
 ///
 
 import 'package:aiia/config.dart';
@@ -72,13 +83,13 @@ class _ChangedDetail1State extends State<ChangedDetail> {
               ],
             ),
           ),
-          /* 전형방법 */
+          /* 평가방법 */
           Container(
             padding: EdgeInsets.symmetric(vertical: 17.5),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("전형방법", style: ts1),
+                Text("평가방법", style: ts1),
                 Container(
                     margin: EdgeInsets.symmetric(horizontal: 15),
                     child: Column(
@@ -206,7 +217,7 @@ class _ChangedDetail1State extends State<ChangedDetail> {
                               child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("논술", style: ts2),
+                                    Text("농어촌(교과)", style: ts2),
                                     Container(
                                       margin: EdgeInsets.only(left: 12, top: 5),
                                       child: Table(children: [

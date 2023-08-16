@@ -1,5 +1,9 @@
 ///
 /// 모집요강 틀
+/// - 학교 홍보
+/// - 주요 변경 사항
+/// - 모집 인원
+/// - 전형 일정
 ///
 
 import 'package:aiia/config.dart';
@@ -160,11 +164,7 @@ class _AdmissionGuidelineState extends State<AdmissionGuideline> {
               ),
               Divider(color: Color(0xFF9B9B9B), height: 1, thickness: 1),
               /* Main */
-              Container(
-                height: MediaQuery.of(context).size.height - 109,
-                width: MediaQuery.of(context).size.width,
-                child: _page[_idx]
-              )
+              Expanded(child: _page[_idx])
             ],
           ),
         ),
